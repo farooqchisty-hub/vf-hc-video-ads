@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Headcount AI Round 4 Ad Plan</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f6f2;--card:#ffffff;--ink:#16161a;--muted:#5d5d66;--line:#e3e1da;
+  --win:#0f7a4a;--win-bg:#e6f4ec;--lose:#a23a2a;--lose-bg:#f8e9e5;--warn:#8a5a00;--warn-bg:#fbf1dc;
+  --accent:#3b3bd6;--chip:#efeee9;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111114;--card:#1a1a1f;--ink:#f1f0ec;--muted:#a3a3ad;--line:#2c2c33;
+    --win:#4fd394;--win-bg:#14301f;--lose:#ff8a75;--lose-bg:#3a1c17;--warn:#f0c062;--warn-bg:#352a12;
+    --accent:#9b9bff;--chip:#24242b;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111114;--card:#1a1a1f;--ink:#f1f0ec;--muted:#a3a3ad;--line:#2c2c33;
+  --win:#4fd394;--win-bg:#14301f;--lose:#ff8a75;--lose-bg:#3a1c17;--warn:#f0c062;--warn-bg:#352a12;
+  --accent:#9b9bff;--chip:#24242b;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,-apple-system,sans-serif}
+.wrap{max-width:980px;margin:0 auto;padding:40px 16px 80px}
+.eyebrow{font:500 12px/1 "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:36px;line-height:1.15;margin:10px 0 8px;letter-spacing:-.02em}
+h1 em,h2 em,.hook em{font-family:"Instrument Serif",serif;font-style:italic;font-weight:400}
+h2{font-size:24px;margin:48px 0 6px;letter-spacing:-.01em}
+h3{font-size:17px;margin:0 0 4px}
+p{margin:6px 0}
+.sub{color:var(--muted);margin-top:4px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px}
+.finding{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.finding .card h3{font-size:15px}
+.big{font-size:30px;font-weight:700;letter-spacing:-.02em;line-height:1.1;margin:6px 0 2px}
+.win{color:var(--win)}.lose{color:var(--lose)}
+.tag{display:inline-block;font:600 12px/1 Inter,sans-serif;padding:5px 8px;border-radius:999px;background:var(--chip);color:var(--ink);white-space:nowrap}
+.tag.win{background:var(--win-bg);color:var(--win)}.tag.lose{background:var(--lose-bg);color:var(--lose)}.tag.warn{background:var(--warn-bg);color:var(--warn)}
+.tablewrap{overflow-x:auto;margin-top:14px;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:760px}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.note{font-size:14px;color:var(--muted);margin-top:10px}
+ul{margin:8px 0;padding-left:20px}
+li{margin:4px 0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+.concept .id{font:500 12px/1 "JetBrains Mono",monospace;color:var(--muted)}
+.concept .hook{font-size:19px;font-weight:600;line-height:1.3;margin:10px 0 8px}
+.concept dl{margin:8px 0 0;display:grid;grid-template-columns:78px 1fr;gap:4px 10px;font-size:14px}
+.concept dt{color:var(--muted)}
+.concept dd{margin:0}
+.statics{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+.statics .card ol{margin:6px 0 0;padding-left:20px}
+.statics li{margin:6px 0}
+.wave{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.rules li{margin:6px 0}
+.ask{border:2px solid var(--accent)}
+footer{margin-top:48px;font-size:13px;color:var(--muted)}
+@media (max-width:720px){
+  h1{font-size:28px}
+  h2{font-size:21px;margin-top:40px}
+  .finding,.grid,.statics{grid-template-columns:1fr}
+  .big{font-size:26px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="eyebrow">Headcount AI · Meta ads · Round 4 plan · 23 Nov 2026</div>
+<h1>Sell the team, <em>not one agent.</em></h1>
+<p class="sub">Built from 4 days of results (19 to 22 Nov), Meta spend joined with real orders in the Headcount database. 20 ads, ₹54,790 spent, 12 buyers, ₹48,976 revenue.</p>
+
+<div class="finding">
+  <div class="card">
+    <span class="tag win">Sells the whole team or an edge</span>
+    <div class="big win">3.0% of visits buy</div>
+    <p>HC-A, HC-N, HC-D, HC-F. ₹19,097 spent, 8 buyers, ₹33,482 revenue. About ₹2,390 per buyer.</p>
+  </div>
+  <div class="card">
+    <span class="tag lose">Sells one feature</span>
+    <div class="big lose">0.6% of visits buy</div>
+    <p>HC-L, HC-E, HC-K, HC-M, HC-J, HC-H. ₹35,691 spent, 3 buyers, ₹8,997 revenue. About ₹11,900 per buyer.</p>
+  </div>
+</div>
+<p class="note">Click rates are similar in both groups (2.1% to 3.6%). The feature ads pull curious clicks, not buyers. A visitor sold on "one agent" lands on a 40-agent page and drops. Caveat: most ads have 0 to 2 buyers, so single-ad reads are noisy. The group gap (5x) is the solid signal. Only HC-A has repeat buyers (4).</p>
+
+<h2>Last 4 days, per ad</h2>
+<p class="sub">v1 and v2 cuts combined. Buyers and revenue from real orders (Meta claims 17 purchases; the database has 12). Revenue includes add-ons. Break-even is about ₹4,080 spend per buyer.</p>
+<div class="tablewrap">
+<table>
+<thead><tr><th>Ad</th><th>Angle</th><th>Spend</th><th>Visits</th><th>Buyers</th><th>Revenue</th><th>Spend per buyer</th><th>Visits that buy</th><th>Call</th></tr></thead>
+<tbody>
+<tr><td>HC-N Spy on Your Competitors</td><td>Edge</td><td class="n">₹2,554</td><td class="n">36 visits</td><td class="n">2 buyers</td><td class="n">₹10,293</td><td class="n">₹1,277</td><td class="n">5.6%</td><td><span class="tag win">Scale</span></td></tr>
+<tr><td>HC-A A Specialist for ₹75</td><td>Team</td><td class="n">₹11,620</td><td class="n">173 visits</td><td class="n">4 buyers</td><td class="n">₹17,191</td><td class="n">₹2,905</td><td class="n">2.3%</td><td><span class="tag win">Scale</span></td></tr>
+<tr><td>HC-F Claude Without Agents</td><td>Claude upgrade</td><td class="n">₹2,373</td><td class="n">18 visits</td><td class="n">1 buyer</td><td class="n">₹2,999</td><td class="n">₹2,373</td><td class="n">5.6%</td><td><span class="tag">Keep</span></td></tr>
+<tr><td>HC-D Don't Hire a Marketer Yet</td><td>Team</td><td class="n">₹2,550</td><td class="n">37 visits</td><td class="n">1 buyer</td><td class="n">₹2,999</td><td class="n">₹2,550</td><td class="n">2.7%</td><td><span class="tag">Keep</span></td></tr>
+<tr><td>HC-L The Influencer Who Isn't Real</td><td>Feature</td><td class="n">₹9,747</td><td class="n">147 visits</td><td class="n">2 buyers</td><td class="n">₹5,998</td><td class="n">₹4,874</td><td class="n">1.4%</td><td><span class="tag warn">Cut budget</span></td></tr>
+<tr><td>HC-E The 8 AM Ad Routine</td><td>Feature</td><td class="n">₹11,071</td><td class="n">191 visits</td><td class="n">1 buyer</td><td class="n">₹2,999</td><td class="n">₹11,071</td><td class="n">0.5%</td><td><span class="tag lose">Pause</span></td></tr>
+<tr><td>HC-K AI Is Recommending Them</td><td>Feature</td><td class="n">₹5,284</td><td class="n">46 visits</td><td class="n">0 buyers</td><td class="n">₹0</td><td class="n">none</td><td class="n">0%</td><td><span class="tag lose">Paused 21 Nov</span></td></tr>
+<tr><td>HC-M The Viral Reel Lab</td><td>Feature</td><td class="n">₹4,136</td><td class="n">49 visits</td><td class="n">0 buyers</td><td class="n">₹0</td><td class="n">none</td><td class="n">0%</td><td><span class="tag lose">Pause</span></td></tr>
+<tr><td>HC-J Buyers on Reddit</td><td>Feature</td><td class="n">₹3,149</td><td class="n">52 visits</td><td class="n">0 buyers</td><td class="n">₹0</td><td class="n">none</td><td class="n">0%</td><td><span class="tag lose">Pause</span></td></tr>
+<tr><td>HC-H A Day With 40 Agents</td><td>Feature</td><td class="n">₹2,304</td><td class="n">33 visits</td><td class="n">0 buyers</td><td class="n">₹0</td><td class="n">none</td><td class="n">0%</td><td><span class="tag lose">Pause</span></td></tr>
+</tbody>
+</table>
+</div>
+<p class="note">Not shown: 1 untagged buyer (₹6,497 with add-on). Visits are paid landing page views.</p>
+
+<h2>Step 1. Fix the live account <em>first</em></h2>
+<p class="sub">Total stays about where it is today: ₹13,500 a day for Headcount. Money moves from feature ads to winners and to the Round 4 test.</p>
+<div class="grid">
+  <div class="card">
+    <h3>Pause 4 ads</h3>
+    <p>HC-E-v2, HC-M-v2, HC-J-v2, HC-H-v2. These 4 angles spent ₹20,660 (both cuts) for 1 buyer.</p>
+  </div>
+  <div class="card">
+    <h3>Scale 2 winners</h3>
+    <p>HC-N-v2 from ₹1,000 a day to ₹2,500 a day. HC-A-v2 ad set to ₹3,000 a day.</p>
+  </div>
+  <div class="card">
+    <h3>Keep 2, watch</h3>
+    <p>HC-D-v2 and HC-F-v2 at ₹1,000 a day each until each has ₹6,000 spent.</p>
+  </div>
+  <div class="card">
+    <h3>Cut 1</h3>
+    <p>HC-L-v2 to ₹1,000 a day. It sells, but at ₹4,874 per buyer, above break-even.</p>
+  </div>
+</div>
+<p class="note">Winners then run on ₹8,500 a day. That leaves ₹5,000 a day for the Round 4 test below.</p>
+
+<h2>Step 2. The next set: <em>25 ads in two waves</em></h2>
+<p class="sub">Every ad sells the whole team, an edge over competitors, or Claude with a team behind it. Single agents appear only as proof inside that frame.</p>
+
+<div class="wave"><h2 style="margin-top:28px">Wave 1 · 17 ads</h2><span class="tag">Fast, from what we already have</span></div>
+<p class="sub">Tests hook lines cheaply. Winning lines become the hooks of the Wave 2 films.</p>
+
+<div class="card" style="margin-top:14px">
+  <h3>4 short cuts of the winners, 20 to 25 seconds</h3>
+  <p>HC-A-25, HC-N-25, HC-D-25, HC-F-25. Same hook, the single strongest proof beat, the close and the CTA tag. Re-edited from the existing masters and voice takes, no new generation. Each goes into the same ad set as its long version, so Meta picks the length. Every live Headcount ad today is 38 to 48 seconds; short is untested.</p>
+</div>
+
+<h3 style="margin-top:22px">12 statics, 4 angles x 3 lines</h3>
+<p class="sub">In the approved organic look: the site's own fonts and colours, one plain line plus an italic twist, real product UI. 4:5 for feed and 9:16 for stories and reels.</p>
+<div class="statics">
+  <div class="card"><span class="tag">Team</span>
+    <ol>
+      <li>Your next marketing hire <em>doesn't need a desk.</em></li>
+      <li>₹75 a marketer. <em>Forty of them, inside Claude.</em></li>
+      <li>A full marketing team. <em>Zero payroll.</em></li>
+    </ol>
+  </div>
+  <div class="card"><span class="tag">Edge</span>
+    <ol>
+      <li>Your competitor changed their prices on Tuesday. <em>You'd know on Tuesday.</em></li>
+      <li>Their best ad is public. <em>Make it yours.</em></li>
+      <li>Every competitor move, <em>on one page every Monday.</em></li>
+    </ol>
+  </div>
+  <div class="card"><span class="tag">Claude upgrade</span>
+    <ol>
+      <li>Stop chatting with Claude. <em>Give it a job.</em></li>
+      <li>Your Claude plan <em>just got a marketing team.</em></li>
+      <li>Claude can write it. <em>These agents get it done.</em></li>
+    </ol>
+  </div>
+  <div class="card"><span class="tag">Any business</span>
+    <ol>
+      <li>Clinics. Coaches. Agencies. Stores. <em>Same 40 marketers.</em></li>
+      <li>Whatever you sell, <em>40 marketers to sell it.</em></li>
+      <li>Coaches: a LinkedIn post every day, <em>in your own voice.</em></li>
+    </ol>
+  </div>
+</div>
+<p class="note">"Any business" is new. Every ad so far reads as ads-and-ecommerce. Buyers span every kind of business (one is a CA coach on a ₹20,000 deal), so this widens the audience on purpose.</p>
+
+<div class="card" style="margin-top:14px">
+  <h3>1 carousel: Meet your 40</h3>
+  <p>10 cards. Cover: "Your marketing team is ready. <em>Swipe to meet them.</em>" Then 8 department cards, each with one flagship agent and its real finished output. Last card: Meet your 40 agents. Shows the whole team in one swipe, which is what the winning ads sell.</p>
+</div>
+
+<div class="wave"><h2 style="margin-top:36px">Wave 2 · 8 films</h2><span class="tag">New concepts, after the Wave 1 read</span></div>
+<p class="sub">6 motion-graphics films plus 2 AI-presenter ads. Hook text on frame 1 gets swapped for the best Wave 1 static line in the same angle.</p>
+
+<div class="grid">
+  <div class="card concept">
+    <div class="id">HC-O · Team</div>
+    <div class="hook">Claude just got a marketing department 🏢</div>
+    <dl>
+      <dt>Story</dt><dd>An org chart builds itself: 9 departments, 40 agents. Each tile flips to a real finished output in about 2 seconds: an ad set, an article, an email flow, a competitor brief. Ends on the Monday Standup landing.</dd>
+      <dt>Why</dt><dd>HC-A's winning message in a new visual world. Tells us if the message or the execution won.</dd>
+    </dl>
+  </div>
+  <div class="card concept">
+    <div class="id">HC-P · Edge</div>
+    <div class="hook">Steal your competitor's best ad (legally) 🫣</div>
+    <dl>
+      <dt>Story</dt><dd>Every ad is public in the Meta Ad Library. The ones they keep running are usually winners. Competitor Watch flags one, Winner Remixer turns it into your version, Angle Miner finds the argument they missed. Example brands only.</dd>
+      <dt>Why</dt><dd>Sequel to HC-N, the best spend per buyer (₹1,277).</dd>
+    </dl>
+  </div>
+  <div class="card concept">
+    <div class="id">HC-Q · Edge + team</div>
+    <div class="hook">Every Monday at 9, your AI team reports in ☕</div>
+    <dl>
+      <dt>Story</dt><dd>One page lands: what competitors changed, what moved, what each agent does next. Then the camera pulls back to the 40 agents who made it.</dd>
+      <dt>Why</dt><dd>The original brand promise ("they report every Monday") plus the intel angle that sells.</dd>
+    </dl>
+  </div>
+  <div class="card concept">
+    <div class="id">HC-R · Team</div>
+    <div class="hook">Don't post that marketing job yet ✋</div>
+    <dl>
+      <dt>Story</dt><dd>A job post is being typed: "Hiring: Marketing Manager". It freezes. One good hire covers two or three of these nine jobs. The post edits itself into "Installed: 40 agents". The ₹75-an-agent line comes only at the close.</dd>
+      <dt>Why</dt><dd>Sequel to HC-D (best click rate, 3.6%) with HC-A's unit price at the end.</dd>
+    </dl>
+  </div>
+  <div class="card concept">
+    <div class="id">HC-S · Any business</div>
+    <div class="hook">A dentist, a CA and a candle brand walk into Claude 😄</div>
+    <dl>
+      <dt>Story</dt><dd>Same 40 marketers, three example businesses. Clinic: every Google review answered. CA firm: a LinkedIn post a day in the founder's voice. Candle brand: 20 ads from its website. Close: whatever you sell, the team learns it from your Company Brain.</dd>
+      <dt>Why</dt><dd>Funny, and the first film that says "any business" out loud.</dd>
+    </dl>
+  </div>
+  <div class="card concept">
+    <div class="id">HC-T · Claude upgrade</div>
+    <div class="hook">You're using Claude like a chatbot. It can run your marketing 😬</div>
+    <dl>
+      <dt>Story</dt><dd>Split screen. Left: "write me a caption". Right: an agent reads the Company Brain, runs its playbook, does a dry run, asks for approval, hands over the finished job. Close: same Claude plan, 40 jobs it can now do.</dd>
+      <dt>Why</dt><dd>Sequel to HC-F (5.6% of visits buy, tiny spend).</dd>
+    </dl>
+  </div>
+  <div class="card concept">
+    <div class="id">HC-U · AI presenter</div>
+    <div class="hook">3 AI agents every business owner should install this week 📌</div>
+    <dl>
+      <dt>Story</dt><dd>Young presenter, walk-and-talk, 3 setups, 25 to 30 seconds. Listicle format: Competitor Watch, Monday Standup, Static Ad Factory, each with a real screen insert. "They're 3 of 40 in Headcount AI."</dd>
+      <dt>Why</dt><dd>Reads as content, not an ad. First human face in a Headcount ad.</dd>
+    </dl>
+  </div>
+  <div class="card concept">
+    <div class="id">HC-V · AI presenter</div>
+    <div class="hook">Rating 5 AI marketing agents inside Claude 🔥</div>
+    <dl>
+      <dt>Story</dt><dd>The presenter scores 5 real agent outputs out of 10, fast cuts, score stamps. Ends on "the other 35 are in Headcount AI".</dd>
+      <dt>Why</dt><dd>Rating format holds attention. Shows breadth without a feature pitch.</dd>
+    </dl>
+  </div>
+</div>
+
+<h2>Step 3. Test setup</h2>
+<div class="grid">
+  <div class="card">
+    <h3>Winners, ₹8,500 a day (existing campaigns)</h3>
+    <ul>
+      <li>HC-A-v2 + HC-A-25: ₹3,000 a day</li>
+      <li>HC-N-v2 + HC-N-25: ₹2,500 a day</li>
+      <li>HC-D-v2 + HC-D-25: ₹1,000 a day</li>
+      <li>HC-F-v2 + HC-F-25: ₹1,000 a day</li>
+      <li>HC-L-v2: ₹1,000 a day</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Round 4 test campaign, ₹5,000 a day</h3>
+    <ul>
+      <li>Wave 1: 4 static ad sets (one per angle, 3 statics each) and 1 carousel ad set, ₹1,000 a day each</li>
+      <li>Wave 2: each film gets its own ad set at ₹1,000 a day, taking the slot of a Wave 1 loser</li>
+      <li>Same settings as today: Purchase on the shared pixel, buyer exclusion on</li>
+    </ul>
+  </div>
+</div>
+<div class="card" style="margin-top:12px">
+  <h3>Read and act rules, checked at the two daily windows only (09:15 and 17:15 IST)</h3>
+  <ul class="rules">
+    <li><b>Hook passes (statics):</b> link click rate at least 2.5% and at most ₹70 per visit after ₹1,500 spent.</li>
+    <li><b>Pause:</b> ₹3,000 spent with 0 checkouts started, or ₹6,000 spent with 0 buyers, or above ₹6,000 per buyer after ₹9,000 spent.</li>
+    <li><b>Scale:</b> 2 or more buyers at ₹3,000 per buyer or less. Raise that ad set 30%, at most once every 2 days.</li>
+    <li><b>Count buyers from real orders,</b> not Meta (Meta over-counts by about 40%). Ad name in lowercase goes in utm_content, for example hc-o, hc-a-25, hc-st-edge-2.</li>
+  </ul>
+</div>
+
+<h2>Rules every ad follows</h2>
+<div class="card">
+  <ul class="rules">
+    <li>Any business. Never "for D2C" or "for ecommerce brands".</li>
+    <li>Say agents, never prompts. Claude before ChatGPT in hooks.</li>
+    <li>No dates and no deadline in any ad, so nothing needs a re-cut when the launch date rolls.</li>
+    <li>Price only as the ₹75-an-agent unit line (HC-A static 2, HC-R close). Nothing about refunds or guarantees.</li>
+    <li>Real product UI. Example brands labelled "Example". No invented results, no fake testimonials, presenters speak as explainers.</li>
+    <li>Films: emoji hook on frame 1, first word by 0.3 seconds, one unbroken voice take per beat, content format first, product enters about a third in.</li>
+  </ul>
+</div>
+
+<h2>One landing page lever</h2>
+<div class="card">
+  <p>The edge ads point to one agent ("Meet Competitor Watch") but land on the general hero. A link like <code>/headcount/?agent=competitor-watch</code> that opens the showcase on that agent would match the ad to the page. Cheap to build. It also ties into the Clarity and order re-read due about 25 Nov.</p>
+</div>
+
+<h2>What I need from you</h2>
+<div class="card ask">
+  <ul>
+    <li>Go or no on Step 1 (pause 4, scale 2, total spend unchanged).</li>
+    <li>Cut any concept or static line you don't like. Everything else gets built.</li>
+  </ul>
+</div>
+
+<footer>Data: Meta ad insights and the headcount-orders database, 19 to 22 Nov 2026 IST, QA and zero-value orders excluded. Prices in ₹ because the Headcount account and checkout run in INR.</footer>
+</div>
+</body>
+</html>
